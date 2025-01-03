@@ -161,9 +161,19 @@ const Invoice = () => {
             <input type="text" name="state" value={invoiceData.state} onChange={handleChange} className="form-control" />
           </div>
           <div className="col-md-6 mb-3">
-            <label>Product Description</label>
-            <input type="text" name="productDescription" value={invoiceData.productDescription} onChange={handleChange} className="form-control" />
-          </div>
+          <label>Product Description</label>
+          <select name="productDescription" value={invoiceData.productDescription} onChange={handleChange} className="form-control">
+            <option value="">Select Product</option>
+            <option value="Nenthara Banana Powder 100g">Nenthara Banana Powder 100g</option>
+            <option value="Aavaram Poo Powder 100g">Aavaram Poo Powder 100g</option>
+            <option value="Tea Powder CTC 100g">Tea Powder CTC 100g</option>
+            <option value="Tea Powder CTC 250g">Tea Powder CTC 250g</option>
+            <option value="Tea Powder CTC 500g">Tea Powder CTC 500g</option>
+            <option value="Nenthara Banana Powder 200g">Nenthara Banana Powder 200g</option>
+            <option value="Nenthara Banana Powder 500g">Nenthara Banana Powder 500g</option>
+            <option value="Nenthara Banana Powder 1kg">Nenthara Banana Powder 1kg</option>
+          </select>
+        </div>
           <div className="col-md-3 mb-3">
             <label>Quantity</label>
             <input type="number" name="quantity" value={invoiceData.quantity} onChange={handleChange} className="form-control" />
